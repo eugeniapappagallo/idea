@@ -4,13 +4,9 @@
 * {
     font-family: monospace;
     text-align: center;
-    background-color:#fffbf5;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   
-   
-    
+    box-sizing: border-box; 
 }
 
 html{
@@ -23,18 +19,21 @@ header {
     height: 20rem;
     background-image: url(../img/backroundpic.png); 
     
-    
 }
 
 main {
-    margin: 30%;
+    padding-top: 30;
     align-items: center;
-    
-    
-
 }
+
+#fondo{
+    background-image: linear-gradient(to bottom, #fffbf5 80%, #EFE5D5);
+        }
+
+
 .card__image{
-    height: 200px;
+    height: 20rem;
+
 
 }
 
@@ -57,31 +56,34 @@ main {
     text-decoration: underline;
     font-size: 16px
 }
-
 .card__categorias{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 1rem;
-
+    grid-template-columns: 1fr; 
+    padding-top: 20%;
+}
+.cajaCategorias:hover{
+    transform: scale(1.05, 1.05)
 }
 
 .card__categoriasTitulos{
-    font-size: 1.5rem;
+    font-size: 18px;
     text-decoration: underline;
     font-weight: bold;
     margin: auto;
     color: #557B83;
-
+    align-items: center;
+ padding-top: 5rem;
 }
 
  .card__categoriasFotos{
-     width: 10rem;
-     margin: 5px;
+     height: 15rem;
+     padding-top: 2rem;
+    
+
  }
+
 .card__footer {
-    margin: 10px;
+    padding-top: 20%;
     color: #557B83;
     display: flex;
     flex-direction: column;
@@ -135,13 +137,17 @@ h4 {
     font-size: 15px;
     color: #557B83;
     font-weight: bold;
-    margin: 2px;
+    padding-top: 35%;
 }
 
 .card__formularioBoton {
     height: 40px;
     width: 70px;
-    background-color: #d1cbbc
+    background-image: linear-gradient(to bottom,#D1CBBC, #EFEBE5);
+    
+}
+.card__formularioBoton:hover{
+    transform: scale(1.1, 1.1);
 }
 
 iframe {
@@ -170,12 +176,12 @@ td {
 }
 
 .card__formulario {
-    margin: 0%
+    padding-top: 45%;
 
 }
 
 .card__formularioItem {
-    margin: px
+    padding-top: 2%;
 }
 
 label {
@@ -184,7 +190,10 @@ label {
     font-size: 20px
 }
 
-
+textarea {
+    height: 50px;
+    width: 200px;
+}
 
 input {
     height: 30px;
@@ -200,8 +209,8 @@ input {
 .card__quienessomoscontenido{
 
     display: grid;
+    padding-top: 35%;
     grid-template-rows: 1fr 1fr;
-    margin: 50px;
     justify-items: center;
   
     }
@@ -223,22 +232,25 @@ input {
 
 }
 .card__FotosProductos{
-    width: 200px;
-    margin: 0%;
+    width: fit-content;
+   padding-top: 35%;
 }
 .card__fotos {
 
-    height: 110px;
+    height: 120px;
     width: auto;
    
 }
+.card__fotos:hover{
+    transform: scale(1.05, 1.05)
+}
+
 }
 @media only screen and (min-width: 601px) and (max-width: 1239px) {
           
 * {
     font-family: monospace;
     text-align: center;
-    background-color:#fffbf5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;     
@@ -254,20 +266,18 @@ header {
     height: 30rem;
     background-image: url(../img/backroundpic.png); 
     
-    
 }
 
-main {
-    margin: 20%;
-    align-items: center;
-    
-    
+#fondo{
+    background-image: linear-gradient(to bottom, #fffbf5 80%, #EFE5D5);
+        }
 
-}
 .card__image{
-    height: 300px;
+    height: 30rem;
 
 }
+
+
 
 .card__items {
     border: 0ch;
@@ -278,10 +288,6 @@ main {
     font-size: 22px;
     font-weight: bold;
     justify-content: center;
-    
-   
-  
-
 }
 
 .card__items-link:hover {
@@ -289,31 +295,35 @@ main {
     text-decoration: underline;
     font-size: 23px
 }
-
+        
 .card__categorias{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 1.5rem;
-
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding-top: 20%;
+}
+.cajaCategorias:hover{
+    transform: scale(1.05, 1.05)
 }
 
 .card__categoriasTitulos{
-    font-size: 2.4rem;
+    font-size: 25px;
     text-decoration: underline;
     font-weight: bold;
     margin: auto;
     color: #557B83;
-
+    align-items: center;
+ padding-top: 5rem;
 }
 
  .card__categoriasFotos{
-     width: 17rem;
-     margin: 7px;
+     height: 20rem;
+     padding-top: 2rem;
+    
+
  }
+
 .card__footer {
-    margin: 20%;
+    padding-top: 25%;
     color: #557B83;
     display: flex;
     flex-direction: column;
@@ -321,7 +331,7 @@ main {
 
 }
 .card__footerContacto{
-    margin: 10px;
+   padding: 10px;
 }
 
 .card__footerRedesFotos{
@@ -367,13 +377,17 @@ h4 {
     font-size: 22px;
     color: #557B83;
     font-weight: bold;
-    margin: 2px;
+    padding-top: 30%;
 }
 
 .card__formularioBoton {
     height: 40px;
     width: 70px;
-    background-color: #d1cbbc
+    
+    background-image: linear-gradient(to bottom,#D1CBBC, #EFEBE5);
+}
+.card__formularioBoton:hover{
+    transform: scale(1.1, 1.1);
 }
 
 iframe {
@@ -401,7 +415,7 @@ td {
     padding: 5px;
 }
 .card__formulario {
-    margin: 100px;
+    padding-top: 30%;
     align-items: center;
 
 }
@@ -415,6 +429,10 @@ label {
     width: 100px;
     display: inline-block;
     font-size: 20px
+}
+textarea {
+    height: 75px;
+    width: 200px;
 }
 
 input {
@@ -432,14 +450,14 @@ input {
 
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin: 50px;
+    padding-top: 25%;
     justify-items: center;
   
     }
     
 .card__quienessomosDescription {
     width: 80%;
-    font-size: 20px;
+    font-size: 25px;
     color: #557B83;
     font-weight: bold;
     align-self: center;
@@ -455,7 +473,8 @@ input {
 }
 .card__FotosProductos{
     width:fit-content;
-    margin: 0%;
+    padding-top: 35%;
+   
 }
 .card__fotos {
 
@@ -463,6 +482,10 @@ input {
     width: auto;
    
 }
+.card__fotos:hover{
+    transform: scale(1.05, 1.05)
+}
+
 }
 
     @media only screen and (min-width:1240px){
@@ -470,7 +493,6 @@ input {
             font-family: monospace;
             font-size: large;
             text-align: center;
-            background-color: #fffbf5;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -485,13 +507,10 @@ input {
         header {
             background-image: url(../img/backroundpic.png);
             margin-bottom: 100;
-            
         }
-        
-        main {
-            margin: 150px;
-            
-        
+  
+        #fondo{
+    background-image: linear-gradient(to bottom, #fffbf5 80%, #EFE5D5);
         }
         
         
@@ -519,8 +538,8 @@ input {
         
         .card__image{
             height: 20rem;
-        
-        }
+            }
+      
         
         .card__items {
             margin: 20px;
@@ -537,13 +556,16 @@ input {
             font-size: 20px;
             color: #557B83;
             font-weight: bold;
-            margin: 50px;
+            padding: 10%;
         }
         
         .card__formularioBoton {
             height: 40px;
             width: 70px;
-            background-color: #d1cbbc
+    background-image: linear-gradient(to bottom,#D1CBBC, #EFEBE5);
+        }
+        .card__formularioBoton:hover{
+            transform: scale(1.05, 1.05);
         }
         
         iframe {
@@ -570,7 +592,7 @@ input {
         }
         
         .card__formulario {
-            margin: 100px;
+            padding: 10%;
         
         }
         
@@ -596,7 +618,12 @@ input {
             text-decoration: underline;
             font-size: 31px
         }
-        
+
+        textarea {
+            height: 50px;
+            width: 200px;
+        }
+
         input {
             height: 30px;
             width: 200px;
@@ -612,7 +639,7 @@ input {
         
             display: grid;
             grid-template-columns: 1fr 1fr;
-            margin: 90px;
+            padding:90px;
             }
             
         .card__quienessomosDescription {
@@ -630,11 +657,11 @@ input {
         
         }
         .card__footer {
-            margin: 200px;
             color: #557B83;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding-top: 25%;
         
         }
         
@@ -660,9 +687,14 @@ input {
         
         .card__categorias{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr; 
+            padding-top: 10%;
+           
         
         
+        }
+        .cajaCategorias:hover{
+            transform: scale(1.05, 1.05)
         }
         
         .card__categoriasTitulos{
@@ -672,12 +704,13 @@ input {
             margin: auto;
             color: #557B83;
             align-items: center;
-        
+         padding-top: 5rem;
         }
         
          .card__categoriasFotos{
-             width: 200px;
-             margin: 50px;
+             height: 22rem;
+             padding-top: 2rem;
+            
         
          }
         
@@ -686,6 +719,7 @@ input {
             grid-template-columns: 1fr 1fr 1fr 1fr;
            justify-items: left;
             margin: 0%;
+            padding: 15%;
             
         }
         
@@ -695,6 +729,9 @@ input {
             height: 300px;
             width: auto;
            
+        }
+        .card__fotos:hover{
+            transform: scale(1.05, 1.05)
         }
         
         #fotoGrande{
