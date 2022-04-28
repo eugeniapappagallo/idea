@@ -1,0 +1,25 @@
+{
+  "name": "idea-pappagallo",
+  "version": "1.0.0",
+  "description": "idea-pappagallo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./Assets/scss/style.scss ./Assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugeniapappagallo/idea.git"
+  },
+  "author": "eugenia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugeniapappagallo/idea/issues"
+  },
+  "homepage": "https://github.com/eugeniapappagallo/idea#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

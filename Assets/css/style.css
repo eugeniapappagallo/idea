@@ -1,867 +1,513 @@
-@media only screen and (min-width:320px) and (max-width:600px) {
-
-    * {
-        font-family: monospace;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    html {
-        font-size: 62, 5%;
-        flex-wrap: wrap;
-
-    }
-
-    header {
-        height: max-content;
-        background-image: url(../img/backroundpic.png);
-
-    }
-
-    main {
-        padding-top: 30;
-        align-items: center;
-    }
-
-    #fondo {
-        background-image: linear-gradient(to bottom, #fffbf5 80%, #EFE5D5);
-    }
-
-
-    .card__image {
-        height: 23rem;
-
-
-    }
-
-    .card__items {
-        border: 0ch;
-        margin: 0%;
-        display: inline;
-        padding: 0.3rem;
-    }
-
-    .card__items-link {
-        text-decoration: none;
-        font-size: 20px;
-        color: #557B83;
-
-    }
-
-    .listaNav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card__items-link:hover {
-        color: #edd0b6;
-        text-decoration: underline;
-        font-size: 25px
-    }
-
-    .btn-outline-success {
-        color: #D1CBBC;
-        border-color: #D1CBBC;
-    }
-
-    .btn-outline-success:hover {
-        background-color: #edd0b6;
-        border-color: #D1CBBC;
-    }
-
-    .container-fluid {
-        flex-direction: column;
-        background-color: #F6F2EE;
-        padding-top: 0%;
-    }
-
-    #navbar {
-        padding-top: 0px;
-        padding-bottom: 0.5%;
-
-    }
-
-    .card__items-link:hover {
-        color: #edd0b6;
-        text-decoration: underline;
-        font-size: 16px
-    }
-
-    .card__categorias {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 20%;
-    }
-
-    .cajaCategorias:hover {
-        transform: scale(1.05, 1.05)
-    }
-
-    .card__categoriasTitulos {
-        font-size: 20px;
-        margin: auto;
-        color: #557B83;
-        align-items: center;
-        padding-top: 5rem;
-    }
-
-    .img-thumbnail {
-        height: 20rem;
-        width: 15rem;
-        border-radius: 4px;
-        border-color: #EFE5D5;
-
-
-    }
-
-    .card__footer {
-        padding-top: 20%;
-        color: #557B83;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .titulosfooter {
-        text-decoration: none;
-        font-size: 15px;
-    }
-
-    .card__footerContacto {
-        margin: 15px;
-    }
-
-    .card__footerRedesFotos {
-        border-radius: 20%;
-        height: 2.3rem;
-        width: 2.3rem;
-
-    }
-
-    .card__footerPagosFoto {
-        height: 10px;
-        width: auto;
-
-    }
-
-    h2 {
-
-        font-weight: bold;
-        color: #557B83
-    }
-
-    h1 {
-
-        text-decoration: underline;
-        font-weight: bold;
-
-    }
-
-    h3 {
-        text-decoration: underline;
-        color: #557B83;
-        margin: 10px;
-    }
-
-    h4 {
-        color: #557B83
-    }
-
-
-
-    .card__enviosDescription {
-        width: 100%;
-        display: inline-block;
-        font-size: 15px;
-        color: #557B83;
-        font-weight: normal;
-        padding-top: 30%;
-    }
-
-    .card__formularioBoton:hover {
-        transform: scale(1.1, 1.1);
-    }
-
-    iframe {
-        height: 70px;
-        width: 100px;
-    }
-
-    .table {
-        width: fit-content;
-        color: #557B83;
-        margin: 0 auto;
-    }
-
-    th {
-        font-size: 20px;
-        font-weight: bold;
-
-    }
-
-    td {
-        font-size: 18px;
-        padding: 5px;
-    }
-
-
-    .card__formulario {
-        padding-top: 30%;
-
-    }
-
-    .card__formularioItem {
-        padding-top: 2%;
-    }
-
-    label {
-        width: 100px;
-        display: inline-block;
-        font-size: 20px
-    }
-
-    textarea {
-        height: 50px;
-        width: 200px;
-    }
-
-    input {
-        height: 30px;
-        width: 200px;
-    }
-
-
-    .card__tituloTabla {
-        font-size: 25px;
-    }
-
-    .card__quienessomoscontenido {
-
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        padding-top: 25%;
-        justify-items: center;
-
-    }
-
-    .card__quienessomosDescription {
-        width: 100%;
-
-        font-size: 15px;
-        color: #557B83;
-        align-self: center;
-        font-weight: normal;
-    }
-
-    .card__fotoTaller {
-        width: 100%;
-        height: auto;
-        align-self: center;
-
-    }
-
-    #fototaller2 {
-        width: 100%;
-        height: auto;
-        align-self: flex-start
-    }
-
-    .card__FotosProductos {
-        width: fit-content;
-        padding-top: 20%;
-        border-radius: 3%;
-        padding-bottom: 5%;
-    }
-
-    .card__fotos {
-
-        height: 120px;
-        width: auto;
-
-    }
-
-    .card__fotos:hover {
-        transform: scale(1.05, 1.05)
-    }
-    .page-link{
-        color: #9B9490;
-    }
-    .breadcrumb{
-        color: #9B9490;
-        padding: 5%;
-      }
-
-
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1239px) {
-
-    * {
-        font-family: monospace;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    html {
-        font-size: 62, 5%;
-        flex-wrap: wrap;
-
-    }
-
-    header {
-        height: max-content;
-        background-image: url(../img/backroundpic.png);
-
-    }
-
-    #fondo {
-        background-image: linear-gradient(to bottom, #fffbf5 80%, #EFE5D5);
-    }
-
-    .card__image {
-        height: 30rem;
-
-    }
-
-    .card__items {
-        border: 0ch;
-        margin: 0%;
-        display: inline;
-        padding: 1rem;
-    }
-
-    .card__items-link {
-        text-decoration: none;
-        font-size: 25px;
-        color: #557B83;
-
-    }
-
-    .card__items-link:hover {
-        color: #edd0b6;
-        text-decoration: underline;
-        font-size: 26px
-    }
-
-    .btn-outline-success {
-        color: #D1CBBC;
-        border-color: #D1CBBC;
-    }
-
-    .btn-outline-success:hover {
-        background-color: #edd0b6;
-        border-color: #D1CBBC;
-    }
-
-    .container-fluid {
-        flex-direction: column;
-        background-color: #F8F2EA;
-        padding-top: 0%;
-    }
-
-    #navbar {
-        padding-bottom: 0.5%;
-        padding-top: 0%;
-    }
-
-    #fotoCarrusel {
-        height: fit-content;
-    }
-
-    #carouselExampleDark {
-        padding-top: 0%;
-    }
-
-    .card__categorias {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-top: 20%;
-    }
-
-    .cajaCategorias:hover {
-        transform: scale(1.05, 1.05)
-    }
-
-    .card__categoriasTitulos {
-        font-size: 25px;
-        margin: auto;
-        color: #557B83;
-        align-items: center;
-        padding-top: 5rem;
-    }
-
-    .img-thumbnail{
-        height: 20rem;
-        border-radius: 5px;
-        width: 15rem;
-        border-color: #EFE5D5;
-    }
-
-    .card__footer {
-        padding-top: 25%;
-        color: #557B83;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .titulosfooter {
-        text-decoration: none;
-        font-size: 20px;
-    }
-
-    .card__footerContacto {
-        padding: 10px;
-    }
-
-    .card__footerRedesFotos {
-        border-radius: 20%;
-        height: 3rem;
-        width: 3rem;
-
-    }
-
-    .card__footerPagosFoto {
-        height: 20px;
-        width: auto;
-
-    }
-
-    h2 {
-
-        font-weight: bold;
-        color: #557B83
-    }
-
-    h1 {
-
-        text-decoration: underline;
-        font-weight: bold;
-
-    }
-
-    h3 {
-        text-decoration: underline;
-        color: #557B83;
-        margin: 15px;
-    }
-
-    h4 {
-        color: #557B83
-    }
-
-
-
-    .card__enviosDescription {
-        width: 100%;
-        display: inline-block;
-        font-size: 22px;
-        color: #557B83;
-        font-weight: normal;
-        padding-top: 30%;
-    }
-
-
-    iframe {
-        height: 70px;
-        width: 100px;
-    }
-
-    .table {
-        width: 40rem;
-        color: #557B83;
-        margin: 0 auto;
-    }
-
-    th {
-        font-size: 20px;
-        font-weight: bold;
-
-    }
-
-    td {
-        font-size: 18px;
-        padding: 5px;
-    }
-
-
-    .card__formulario {
-        padding-top: 30%;
-        align-items: center;
-
-    }
-
-    .card__formularioItem {
-        margin: 30px;
-        height: 100px;
-
-    }
-
-    label {
-        width: 100px;
-        display: inline-block;
-        font-size: 22px;
-        color: #726B68;
-        
-    }
-    textarea {
-        height: 75px;
-        width: 200px;
-    }
-
-    input {
-        height: 50px;
-        width: 200px;
-    }
-
-
-    .card__tituloTabla {
-        font-size: 25px;
-    }
-
-
-    .card__quienessomoscontenido {
-
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        padding-top: 25%;
-        justify-items: center;
-
-    }
-
-    .card__quienessomosDescription {
-
-        font-size: 25px;
-        color: #557B83;
-        align-self: center;
-        font-weight: normal;
-    }
-
-    .card__fotoTaller {
-        width: 601px;
-        height: auto;
-        align-self: center;
-
-    }
-
-    #fototaller2 {
-        width: 601px;
-        height: auto;
-        align-self: flex-start
-    }
-
-    .card__FotosProductos {
-        width: fit-content;
-        padding-top: 35%;
-        padding-bottom: 5%;
-
-    }
-
-    .card__fotos {
-
-        height: 18rem;
-        width: auto;
-
-    }
-
-    .card__fotos:hover {
-        transform: scale(1.05, 1.05)
-    }
-    .page-link{
-        color: #9B9490;
-    }
-    .breadcrumb{
-        color: #9B9490;
-        padding: 5%;
-      }
-
-
-}
-
-@media only screen and (min-width:1240px) {
-    * {
-        font-family: monospace;
-        font-size: large;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        flex-wrap: wrap;
-    }
-
-    html {
-        font-size: 62, 5%;
-
-    }
-
-    header {
-        background-image: url(../img/backroundpic.png);
-        margin-bottom: 100;
-    }
-
-    #fondo {
-        background-image: linear-gradient(to bottom, #fffbf5 80%, #EFE5D5);
-        
-    }
-
-    #fotoCarrusel {
-        height: 600px;
-    }
-
-    h2 {
-
-        font-weight: bold;
-        color: #557B83
-    }
-
-    h1 {
-
-        text-decoration: underline;
-        font-weight: bold;
-
-    }
-
-    h3 {
-        color: #557B83;
-        text-decoration: none;
-    }
-
-    h4 {
-        color: #557B83
-    }
-
-    .card__image {
-        height: 25rem;
-    }
-
-
-    .card__items {
+@media only screen and (min-width: 1240px) {
+  * {
+    font-family: monospace;
+    font-size: large;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap; }
+  html {
+    font-size: 62, 5%; }
+  h2 {
+    font-weight: bold;
+    color: #557B83; }
+  h1 {
+    text-decoration: underline;
+    font-weight: bold; }
+  h3 {
+    color: #557B83;
+    text-decoration: none; }
+  header {
+    background-image: url(../img/backroundpic.png);
+    margin-bottom: 100; }
+    header .card__image {
+      height: 25rem; }
+    header #navbar {
+      background-color: #F8F2EA !important; }
+      header #navbar .card__items {
         margin: 20px;
         padding: auto;
         border: 0ch;
         display: inline;
-        width: 5px
-    }
-
-
-    .card__enviosDescription {
-
-        display: inline-block;
-        font-size: 18px;
-        color: #557B83;
-        padding: 10%;
-        font-weight: normal;
-    }
-
-    iframe {
-        width: 200 px
-    }
-
-    .card__formularioItem {
-        margin: 20px
-    }
-
-    label {
-        width: 100px;
-        display: inline-block;
-        font-size: 20px;
-        color: #726B68;
-    }
-
-    .card__items-link {
-        text-decoration: none;
-        font-size: 25px;
-        color: #557B83;
-
-    }
-
-    .card__items-link:hover {
-        color: #edd0b6;
-        text-decoration: underline;
-        font-size: 26px
-    }
-
-    .btn-outline-success {
+        width: 5px; }
+        header #navbar .card__items .card__items-link {
+          text-decoration: none;
+          font-size: 25px;
+          color: #557B83; }
+        header #navbar .card__items .card__items-link:hover {
+          color: #edd0b6;
+          text-decoration: underline;
+          font-size: 26px; }
+      header #navbar .d-flex .btn-outline-success {
         color: #D1CBBC;
-        border-color: #D1CBBC;
-    }
-
-    .btn-outline-success:hover {
+        border-color: #D1CBBC; }
+      header #navbar .d-flex .btn-outline-success:hover {
         background-color: #edd0b6;
-        border-color: #D1CBBC;
-    }
-
-    #navbar {
-        background-color: #F8F2EA !important;
-    }
-    .card__tituloTabla {
-        font-size: 25px;
-    }
-
-
-    .card__quienessomoscontenido {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 90px;
-    }
-
-    .card__quienessomosDescription {
+        border-color: #D1CBBC; }
+  main {
+    background-color: #fffbf5; }
+    main #carrouselExampleDark #fotoCarrusel {
+      height: 600px; }
+    main .card__categorias {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 10%;
+      border-width: 5px; }
+      main .card__categorias .cajaCategorias .cajaCategorias:hover {
+        transform: scale(1.05, 1.05); }
+      main .card__categorias .cajaCategorias .card__categoriasTitulos {
+        font-size: 28px;
+        margin: auto;
+        color: #557B83;
+        align-items: center;
+        padding-top: 5rem; }
+      main .card__categorias .cajaCategorias .img-thumbnail {
+        height: 23rem;
+        width: 18rem;
+        border-radius: 5px;
+        border-color: #EFE5D5; }
+    main .breadcrumb {
+      color: #9B9490;
+      padding: 5%;
+      text-decoration: none !important; }
+    main .card__quienessomoscontenido {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 90px; }
+      main .card__quienessomoscontenido .card__quienessomosDescription {
         width: 450px;
         display: inline-block;
         font-size: 20px;
         color: #557B83;
         font-weight: normal;
         grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    .card__fotoTaller {
+        grid-row-end: 3; }
+      main .card__quienessomoscontenido .card__fotoTaller {
         height: 350px;
-        width: auto;
-
-    }
-
-    #fototaller2 {
+        width: auto; }
+      main .card__quienessomoscontenido #fototaller2 {
         height: 350px;
         width: auto;
         grid-column-start: 2;
+        grid-column-end: 3; }
+    main .card__FotosProductos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: left;
+      margin: 0%;
+      padding: 15%;
+      padding-bottom: 5%; }
+      main .card__FotosProductos #fotoGrande {
+        grid-column-start: 1;
         grid-column-end: 3;
-
-    }
-
-
-    .card__footer {
-        color: #557B83;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10%;
-    }
-
-    .titulosfooter {
-        font-size: 20px;
-    }
-
-    .card__footerRedesFotos {
-        border-radius: 20%;
-        height: 2.3rem;
-        width: 2.3rem;
-
-    }
-
-    .card__footerPagosFoto {
-        height: 25px;
-        width: auto;
-
-    }
-
-    .card__introduccion-info {
-        font-size: 30px;
-        color: #557B83;
-        font-weight: bold;
-        margin: 50px;
-    }
-
-
-    .card__categorias {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 10%;
-        border-width: 5px;
-    }
-
-    .cajaCategorias:hover {
-        transform: scale(1.05, 1.05)
-    }
-
-    .card__categoriasTitulos {
-        font-size: 28px;
-        margin: auto;
-        color: #557B83;
-        align-items: center;
-        padding-top: 5rem;
-    }
-
-    .img-thumbnail {
-        height: 23rem;
-        width: 18rem;
-        border-radius: 5px;
-        border-color: #EFE5D5;
-
-
-    }
-
-    .card__FotosProductos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: left;
-        margin: 0%;
-        padding: 15%;
-        padding-bottom: 5%;
-
-    }
-
-    .card__fotos {
-
+        align-self: flex-end; }
+      main .card__FotosProductos #fotoGrande2 {
+        grid-column-start: 3;
+        grid-column-end: 5; }
+      main .card__FotosProductos .card__fotos {
         margin: 4px;
         height: 300px;
         width: auto;
-        border-radius: 3px;
-        
-
-    }
-
-    .card__fotos:hover {
-        transform: scale(1.05, 1.05);
-        
-       
-    }
-
-    #fotoGrande {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        align-self: flex-end;
-
-
-    }
-
-    #fotoGrande2 {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-
-    .table {
-        width: 40rem;
-        color: #557B83;
-        margin: 0 auto;
-    }
-
-    th {
+        border-radius: 3px; }
+      main .card__FotosProductos .card__fotos:hover {
+        transform: scale(1.05, 1.05); }
+    main .page-link {
+      color: #9B9490; }
+    main .card__enviosDescription {
+      display: inline-block;
+      font-size: 18px;
+      color: #557B83;
+      padding: 10%;
+      font-weight: normal; }
+    main .table {
+      width: 40rem;
+      color: #557B83;
+      margin: 0 auto; }
+      main .table th {
         font-size: 20px;
-        font-weight: bold;
-
-    }
-
-    td {
+        font-weight: bold; }
+      main .table td {
         font-size: 18px;
-        padding: 10px;
-    }
-    .page-link{
-        color: #9B9490;
-    }
-    .breadcrumb{
-        color: #9B9490;
-        padding: 5%;
-        text-decoration: none !important;
-      }
+        padding: 10px; }
+    main .card__formulario {
+      height: 700px; }
+      main .card__formulario .card__formularioItem {
+        margin: 20px; }
+        main .card__formulario .card__formularioItem label {
+          width: 100px;
+          display: inline-block;
+          font-size: 20px;
+          color: #726B68; }
+      main .card__formulario .btn-outline-success {
+        color: #D1CBBC;
+        border-color: #D1CBBC; }
+      main .card__formulario .btn-outline-success:hover {
+        background-color: #edd0b6;
+        border-color: #D1CBBC;
+        padding-bottom: 15%; }
+  footer {
+    background-color: #fffbf5;
+    color: #557B83;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30%; }
+    footer .titulosfooter {
+      font-size: 20px; }
+    footer .card__footerPagosFoto {
+      height: 25px;
+      width: auto; }
+    footer iframe {
+      width: 200 px; }
+    footer .card__footerRedesFotos {
+      border-radius: 20%;
+      height: 2.3rem;
+      width: 2.3rem; } }
 
-}
+@media only screen and (min-width: 601px) and (max-width: 1239px) {
+  * {
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap; }
+  html {
+    font-size: 62, 5%; }
+  h2 {
+    font-weight: bold;
+    color: #557B83; }
+  h1 {
+    text-decoration: underline;
+    font-weight: bold; }
+  h3 {
+    color: #557B83;
+    text-decoration: none;
+    margin: 15px; }
+  header {
+    height: max-content;
+    background-image: url(../img/backroundpic.png); }
+    header .card__image {
+      height: 30rem; }
+    header #navbar {
+      background-color: #F8F2EA !important;
+      padding-bottom: 0.5%;
+      padding-top: 0%; }
+      header #navbar .container-fluid {
+        flex-direction: column;
+        background-color: #F8F2EA;
+        padding-top: 0%; }
+        header #navbar .container-fluid .card__items {
+          border: 0ch;
+          margin: 0%;
+          display: inline;
+          padding: 1rem; }
+        header #navbar .container-fluid .card__items-link {
+          text-decoration: none;
+          font-size: 25px;
+          color: #557B83; }
+        header #navbar .container-fluid .card__items-link:hover {
+          color: #edd0b6;
+          text-decoration: underline;
+          font-size: 26px; }
+        header #navbar .container-fluid .d-flex .btn-outline-success {
+          color: #D1CBBC;
+          border-color: #D1CBBC; }
+        header #navbar .container-fluid .d-flex .btn-outline-success:hover {
+          background-color: #edd0b6;
+          border-color: #D1CBBC; }
+  main {
+    background-color: #fffbf5; }
+    main #carrouselExampleDark {
+      padding-top: 0%; }
+      main #carrouselExampleDark #fotoCarrusel {
+        height: fit-content; }
+    main .card__categorias {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 20%; }
+      main .card__categorias .cajaCategorias .cajaCategorias:hover {
+        transform: scale(1.05, 1.05); }
+      main .card__categorias .cajaCategorias .card__categoriasTitulos {
+        font-size: 25px;
+        margin: auto;
+        color: #557B83;
+        align-items: center;
+        padding-top: 5rem; }
+      main .card__categorias .cajaCategorias .img-thumbnail {
+        height: 20rem;
+        border-radius: 5px;
+        width: 15rem;
+        border-color: #EFE5D5; }
+    main .breadcrumb {
+      color: #9B9490;
+      padding: 5%;
+      text-decoration: none !important; }
+    main .card__quienessomoscontenido {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding-top: 25%;
+      justify-items: center; }
+      main .card__quienessomoscontenido .card__quienessomosDescription {
+        font-size: 25px;
+        color: #557B83;
+        align-self: center;
+        font-weight: normal; }
+      main .card__quienessomoscontenido .card__fotoTaller {
+        width: 601px;
+        height: auto;
+        align-self: center; }
+      main .card__quienessomoscontenido #fototaller2 {
+        width: 601px;
+        height: auto;
+        align-self: flex-start; }
+    main .card__FotosProductos {
+      width: fit-content;
+      padding-top: 35%;
+      padding-bottom: 5%; }
+      main .card__FotosProductos .card__fotos {
+        height: 18rem;
+        width: auto; }
+      main .card__FotosProductos .card__fotos:hover {
+        transform: scale(1.05, 1.05); }
+    main .page-link {
+      color: #9B9490; }
+    main .card__enviosDescription {
+      width: 100%;
+      display: inline-block;
+      font-size: 22px;
+      color: #557B83;
+      font-weight: normal;
+      padding-top: 30%; }
+    main .table {
+      width: 40rem;
+      color: #557B83;
+      margin: 0 auto; }
+      main .table th {
+        font-size: 20px;
+        font-weight: bold; }
+      main .table td {
+        font-size: 18px;
+        padding: 5px; }
+    main .card__formulario {
+      align-items: center;
+      padding-bottom: 10%;
+      height: max-content; }
+      main .card__formulario .card__formularioItem {
+        margin: 30px;
+        height: 100px; }
+        main .card__formulario .card__formularioItem label {
+          width: 100px;
+          display: inline-block;
+          font-size: 22px;
+          color: #726B68; }
+        main .card__formulario .card__formularioItem textarea {
+          height: 75px;
+          width: 200px; }
+        main .card__formulario .card__formularioItem input {
+          height: 50px;
+          width: 200px; }
+      main .card__formulario .btn-outline-success {
+        color: #D1CBBC;
+        border-color: #D1CBBC;
+        padding-bottom: 30%; }
+      main .card__formulario .btn-outline-success:hover {
+        background-color: #edd0b6;
+        border-color: #D1CBBC; }
+  footer {
+    padding-top: 30%;
+    color: #557B83;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fffbf5; }
+    footer .titulosfooter {
+      text-decoration: none;
+      font-size: 20px; }
+    footer .card__footerPagosFoto {
+      height: 20px;
+      width: auto; }
+    footer iframe {
+      height: 70px;
+      width: 100px; }
+    footer .card__footerRedesFotos {
+      border-radius: 20%;
+      height: 3rem;
+      width: 3rem; }
+    footer .card__footerContacto {
+      padding: 10px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  * {
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  html {
+    font-size: 62, 5%;
+    flex-wrap: wrap; }
+  h2 {
+    font-weight: bold;
+    color: #557B83; }
+  h1 {
+    text-decoration: underline;
+    font-weight: bold; }
+  h3 {
+    text-decoration: underline;
+    color: #557B83;
+    margin: 10px; }
+  header {
+    height: max-content;
+    background-image: url(../img/backroundpic.png); }
+    header .card__image {
+      height: 23rem; }
+    header #navbar {
+      background-color: #F8F2EA !important;
+      padding-top: 0px;
+      padding-bottom: 0.5%; }
+      header #navbar .container-fluid {
+        flex-direction: column;
+        background-color: #F8F2EA;
+        padding-top: 0%; }
+        header #navbar .container-fluid .listaNav {
+          display: flex;
+          flex-direction: column; }
+          header #navbar .container-fluid .listaNav .card__items {
+            border: 0ch;
+            margin: 0%;
+            display: inline;
+            padding: 0.3rem; }
+          header #navbar .container-fluid .listaNav .card__items-link {
+            text-decoration: none;
+            font-size: 20px;
+            color: #557B83; }
+          header #navbar .container-fluid .listaNav .card__items-link:hover {
+            color: #edd0b6;
+            text-decoration: underline;
+            font-size: 25px; }
+        header #navbar .container-fluid .d-flex .btn-outline-success {
+          color: #D1CBBC;
+          border-color: #D1CBBC; }
+        header #navbar .container-fluid .d-flex .btn-outline-success:hover {
+          background-color: #edd0b6;
+          border-color: #D1CBBC; }
+  main {
+    padding-top: 30;
+    align-items: center;
+    background-color: #fffbf5; }
+    main .card__categorias {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 20%; }
+      main .card__categorias .cajaCategorias .cajaCategorias:hover {
+        transform: scale(1.05, 1.05); }
+      main .card__categorias .cajaCategorias .card__categoriasTitulos {
+        font-size: 20px;
+        margin: auto;
+        color: #557B83;
+        align-items: center;
+        padding-top: 5rem; }
+      main .card__categorias .cajaCategorias .img-thumbnail {
+        height: 20rem;
+        width: 15rem;
+        border-radius: 4px;
+        border-color: #EFE5D5; }
+    main .breadcrumb {
+      color: #9B9490;
+      padding: 5%;
+      text-decoration: none !important; }
+    main .card__quienessomoscontenido {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding-top: 25%;
+      justify-items: center; }
+      main .card__quienessomoscontenido .card__quienessomosDescription {
+        width: 100%;
+        font-size: 15px;
+        color: #557B83;
+        align-self: center;
+        font-weight: normal; }
+      main .card__quienessomoscontenido .card__fotoTaller {
+        width: 100%;
+        height: auto;
+        align-self: center; }
+      main .card__quienessomoscontenido #fototaller2 {
+        width: 100%;
+        height: auto;
+        align-self: flex-start; }
+    main .card__FotosProductos {
+      width: fit-content;
+      padding-top: 20%;
+      border-radius: 3%;
+      padding-bottom: 5%; }
+      main .card__FotosProductos .card__fotos {
+        height: 120px;
+        width: auto; }
+      main .card__FotosProductos .card__fotos:hover {
+        transform: scale(1.05, 1.05); }
+    main .page-link {
+      color: #9B9490; }
+    main .card__enviosDescription {
+      width: 100%;
+      display: inline-block;
+      font-size: 15px;
+      color: #557B83;
+      font-weight: normal;
+      padding-top: 30%; }
+    main .table {
+      width: fit-content;
+      color: #557B83;
+      margin: 0 auto; }
+      main .table th {
+        font-size: 20px;
+        font-weight: bold; }
+      main .table td {
+        font-size: 18px;
+        padding: 5px; }
+    main .card__formulario {
+      padding-top: 30%; }
+      main .card__formulario .card__formularioItem {
+        padding-top: 2%; }
+        main .card__formulario .card__formularioItem label {
+          width: 100px;
+          display: inline-block;
+          font-size: 20px; }
+        main .card__formulario .card__formularioItem textarea {
+          height: 50px;
+          width: 200px; }
+        main .card__formulario .card__formularioItem input {
+          height: 30px;
+          width: 200px; }
+      main .card__formulario .btn-outline-success {
+        color: #D1CBBC;
+        border-color: #D1CBBC;
+        padding-bottom: 30%; }
+      main .card__formulario .btn-outline-success:hover {
+        background-color: #edd0b6;
+        border-color: #D1CBBC; }
+  footer {
+    padding-top: 20%;
+    color: #557B83;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fffbf5; }
+    footer .titulosfooter {
+      text-decoration: none;
+      font-size: 15px; }
+    footer .card__footerPagosFoto {
+      height: 10px;
+      width: auto; }
+    footer iframe {
+      height: 70px;
+      width: 100px; }
+    footer .card__footerRedesFotos {
+      border-radius: 20%;
+      height: 2.3rem;
+      width: 2.3rem; }
+    footer .card__footerContacto {
+      margin: 15%; } }
