@@ -1,6 +1,15 @@
 @media only screen and (min-width:1240px) {
-    $color-texto: #557B83;
+    $color-texto: #726B68;
     $color-fondo: #fffbf5;
+
+    @mixin fontsize ($size, $weight) {
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+    $fotosfooter: (pagos: 25px,
+        redes: 2.3rem,
+    );
 
     * {
         font-family: monospace;
@@ -24,9 +33,9 @@
     }
 
     h1 {
-
-        text-decoration: underline;
-        font-weight: bold;
+        padding-top: 5%;
+        font-size: 30px;
+        color: $color-texto;
 
     }
 
@@ -57,8 +66,8 @@
 
                 .card__items-link {
                     text-decoration: none;
-                    font-size: 25px;
-                    color: #557B83;
+                    @include fontsize (25px, normal);
+                    color: #726B68;
                 }
 
                 .card__items-link:hover {
@@ -109,7 +118,7 @@
                 .card__categoriasTitulos {
                     font-size: 28px;
                     margin: auto;
-                    color: $color-texto;
+                    color: #726B68;
                     align-items: center;
                     padding-top: 5rem;
                 }
@@ -138,11 +147,10 @@
 
 
             .card__quienessomosDescription {
+                @include fontsize (20px, normal);
                 width: 450px;
                 display: inline-block;
-                font-size: 20px;
                 color: $color-texto;
-                font-weight: normal;
                 grid-row-start: 1;
                 grid-row-end: 3;
             }
@@ -154,8 +162,7 @@
             }
 
             #fototaller2 {
-                height: 350px;
-                width: auto;
+                @extend .card__fotoTaller;
                 grid-column-start: 2;
                 grid-column-end: 3;
 
@@ -201,11 +208,11 @@
         }
 
         .card__enviosDescription {
+            @include fontsize (18px, normal);
             display: inline-block;
-            font-size: 18px;
             color: $color-texto;
             padding: 10%;
-            font-weight: normal;
+
         }
 
         .table {
@@ -215,19 +222,20 @@
 
 
             th {
-                font-size: 20px;
-                font-weight: bold;
+                @include fontsize (20px, bold);
 
             }
 
             td {
-                font-size: 18px;
+
+                @include fontsize (18px, normal);
                 padding: 10px;
             }
         }
 
         .card__formulario {
             height: 700px;
+            padding-top: 10%;
 
             .card__formularioItem {
                 margin: 20px;
@@ -247,15 +255,12 @@
 
             .btn-outline-success:hover {
                 background-color: #edd0b6;
-                border-color: #D1CBBC;
+
                 padding-bottom: 15%;
             }
         }
 
     }
-
-
-
 
     footer {
         background-color: $color-fondo;
@@ -270,7 +275,7 @@
         }
 
         .card__footerPagosFoto {
-            height: 25px;
+            height: map-get($map: $fotosfooter, $key: pagos);
             width: auto;
 
         }
@@ -280,8 +285,8 @@
         }
 
         .card__footerRedesFotos {
+            height: map-get($map: $fotosfooter, $key: redes);
             border-radius: 20%;
-            height: 2.3rem;
             width: 2.3rem;
 
         }
@@ -295,8 +300,17 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1239px) {
-    $color-texto: #557B83;
+    $color-texto: #726B68;
     $color-fondo: #fffbf5;
+
+    @mixin fontsize ($size, $weight) {
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+    $fotosfooter: (pagos: 20px,
+        redes: 3rem,
+    );
 
     * {
         font-family: monospace;
@@ -319,9 +333,9 @@
     }
 
     h1 {
-
-        text-decoration: underline;
-        font-weight: bold;
+        padding-top: 5%;
+        font-size: 30px;
+        color: $color-texto;
 
     }
 
@@ -361,9 +375,9 @@
 
 
                 .card__items-link {
+                    @include fontsize (25px, normal);
                     text-decoration: none;
-                    font-size: 25px;
-                    color: #557B83;
+                    color: #726B68;
 
                 }
 
@@ -419,9 +433,9 @@
                 }
 
                 .card__categoriasTitulos {
-                    font-size: 25px;
+                    @include fontsize (25px, normal);
                     margin: auto;
-                    color: #557B83;
+                    color: $color-texto;
                     align-items: center;
                     padding-top: 5rem;
 
@@ -453,7 +467,7 @@
             justify-items: center;
 
             .card__quienessomosDescription {
-                font-size: 25px;
+                @include fontsize (25px, normal);
                 color: $color-texto;
                 align-self: center;
                 font-weight: normal;
@@ -469,7 +483,8 @@
             #fototaller2 {
                 width: 601px;
                 height: auto;
-                align-self: flex-start
+                align-self: flex-start;
+
             }
 
         }
@@ -494,11 +509,10 @@
         }
 
         .card__enviosDescription {
+            @include fontsize (22px, normal);
             width: 100%;
             display: inline-block;
-            font-size: 22px;
             color: $color-texto;
-            font-weight: normal;
             padding-top: 30%;
         }
 
@@ -508,14 +522,13 @@
             margin: 0 auto;
 
             th {
-                font-size: 20px;
-                font-weight: bold;
+                @include fontsize (20px, bold);
+
 
             }
 
             td {
-
-                font-size: 18px;
+                @include fontsize (18px, normal);
                 padding: 5px;
             }
         }
@@ -538,16 +551,21 @@
                     color: #726B68;
                 }
 
-                textarea {
-                    height: 75px;
-                    width: 200px;
-                }
-
                 input {
-                    height: 50px;
+                    height: 40px; 
                     width: 200px;
+                    padding: 0;
+                    margin: 0;
 
                 }
+
+                textarea {
+                    @extend input;
+                    height: 75px;
+                    
+                }
+
+              
 
             }
 
@@ -581,7 +599,7 @@
         }
 
         .card__footerPagosFoto {
-            height: 20px;
+            height: map-get($map: $fotosfooter, $key: pagos);
             width: auto;
 
         }
@@ -594,7 +612,7 @@
 
         .card__footerRedesFotos {
             border-radius: 20%;
-            height: 3rem;
+            height: map-get($map: $fotosfooter, $key: redes);
             width: 3rem;
         }
 
@@ -608,8 +626,17 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:600px) {
-    $color-texto: #557B83;
+    $color-texto: #726B68;
     $color-fondo: #fffbf5;
+
+    @mixin fontsize ($size, $weight) {
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+    $fotosfooter: (pagos: 10px,
+        redes: 2.3rem,
+    );
 
 
     * {
@@ -633,10 +660,9 @@
     }
 
     h1 {
-
-        text-decoration: underline;
-        font-weight: bold;
-
+        padding-top: 5%;
+        font-size: 25px;
+        color: $color-texto;
     }
 
     h3 {
@@ -681,8 +707,8 @@
                     }
 
                     .card__items-link {
+                        @include fontsize (20px, normal);
                         text-decoration: none;
-                        font-size: 20px;
                         color: $color-texto;
 
                     }
@@ -736,7 +762,7 @@
                 }
 
                 .card__categoriasTitulos {
-                    font-size: 20px;
+                    @include fontsize (20px, normal);
                     margin: auto;
                     color: $color-texto;
                     align-items: center;
@@ -769,12 +795,12 @@
             justify-items: center;
 
             .card__quienessomosDescription {
-                width: 100%;
 
-                font-size: 15px;
+                @include fontsize (15px, normal);
+                width: 100%;
                 color: $color-texto;
                 align-self: center;
-                font-weight: normal;
+
             }
 
             .card__fotoTaller {
@@ -787,7 +813,7 @@
             #fototaller2 {
                 width: 100%;
                 height: auto;
-                align-self: flex-start
+                align-self: flex-start;
             }
 
         }
@@ -814,11 +840,10 @@
         }
 
         .card__enviosDescription {
+            @include fontsize (15px, normal);
             width: 100%;
             display: inline-block;
-            font-size: 15px;
             color: $color-texto;
-            font-weight: normal;
             padding-top: 30%;
         }
 
@@ -827,16 +852,17 @@
             color: $color-texto;
             margin: 0 auto;
 
-            th {
+            .th {
                 font-size: 20px;
                 font-weight: bold;
+                padding: auto;
 
             }
 
             td {
-
-                font-size: 18px;
+            @extend .th;
                 padding: 5px;
+                font-weight: normal;
             }
         }
 
@@ -851,7 +877,8 @@
 
                     width: 100px;
                     display: inline-block;
-                    font-size: 20px
+                    font-size: 20px;
+                    color: #557B83;
                 }
 
                 textarea {
@@ -897,7 +924,8 @@
         }
 
         .card__footerPagosFoto {
-            height: 10px;
+            height: 2rem
+            ;
             width: auto;
 
         }
@@ -909,8 +937,8 @@
         }
 
         .card__footerRedesFotos {
+            height: map-get($map: $fotosfooter, $key: redes);
             border-radius: 20%;
-            height: 2.3rem;
             width: 2.3rem;
         }
 
