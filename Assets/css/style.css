@@ -19,13 +19,14 @@
   h3 {
     color: #726B68;
     text-decoration: none; }
+  /*header*/
   header {
     background-image: url(../img/backroundpic.png);
     margin-bottom: 100; }
     header .card__image {
       height: 25rem; }
     header #navbar {
-      background-color: #F8F2EA !important; }
+      background-color: #F8F2EA; }
       header #navbar .card__items {
         margin: 20px;
         padding: auto;
@@ -47,8 +48,18 @@
       header #navbar .d-flex .btn-outline-success:hover {
         background-color: #edd0b6;
         border-color: #D1CBBC; }
+  /*main*/
   main {
-    background-color: #fffbf5; }
+    background-color: #fffbf5;
+    /*main-index*/
+    /*main-quienessomos*/
+    /*main-productos*/
+    /*main-envios*/
+    /*main-contacto*/ }
+    main .breadcrumb {
+      color: #9B9490;
+      padding: 5%;
+      text-decoration: none; }
     main #carrouselExampleDark #fotoCarrusel {
       height: 600px; }
     main .card__categorias {
@@ -69,10 +80,6 @@
         width: 18rem;
         border-radius: 5px;
         border-color: #EFE5D5; }
-    main .breadcrumb {
-      color: #9B9490;
-      padding: 5%;
-      text-decoration: none !important; }
     main .card__quienessomoscontenido {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -147,6 +154,7 @@
       main .card__formulario .btn-outline-success:hover {
         background-color: #edd0b6;
         padding-bottom: 15%; }
+  /*footer*/
   footer {
     background-color: #fffbf5;
     color: #726B68;
@@ -187,13 +195,14 @@
     color: #726B68;
     text-decoration: none;
     margin: 15px; }
+  /*header*/
   header {
     height: max-content;
     background-image: url(../img/backroundpic.png); }
     header .card__image {
       height: 30rem; }
     header #navbar {
-      background-color: #F8F2EA !important;
+      background-color: #F8F2EA;
       padding-bottom: 0.5%;
       padding-top: 0%; }
       header #navbar .container-fluid {
@@ -220,8 +229,18 @@
         header #navbar .container-fluid .d-flex .btn-outline-success:hover {
           background-color: #edd0b6;
           border-color: #D1CBBC; }
+  /*main*/
   main {
-    background-color: #fffbf5; }
+    background-color: #fffbf5;
+    /*main-index*/
+    /*main-quienessomos*/
+    /*main-productos*/
+    /*main-envios*/
+    /*main-contacto*/ }
+    main .breadcrumb {
+      color: #9B9490;
+      padding: 5%;
+      text-decoration: none; }
     main #carrouselExampleDark {
       padding-top: 0%; }
       main #carrouselExampleDark #fotoCarrusel {
@@ -244,10 +263,6 @@
         border-radius: 5px;
         width: 15rem;
         border-color: #EFE5D5; }
-    main .breadcrumb {
-      color: #9B9490;
-      padding: 5%;
-      text-decoration: none !important; }
     main .card__quienessomoscontenido {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
@@ -323,6 +338,7 @@
       main .card__formulario .btn-outline-success:hover {
         background-color: #edd0b6;
         border-color: #D1CBBC; }
+  /*footer*/
   footer {
     padding-top: 30%;
     color: #726B68;
@@ -367,13 +383,14 @@
     text-decoration: underline;
     color: #726B68;
     margin: 10px; }
+  /*header*/
   header {
     height: max-content;
     background-image: url(../img/backroundpic.png); }
     header .card__image {
       height: 23rem; }
     header #navbar {
-      background-color: #F8F2EA !important;
+      background-color: #F8F2EA;
       padding-top: 0px;
       padding-bottom: 0.5%; }
       header #navbar .container-fluid {
@@ -403,10 +420,20 @@
         header #navbar .container-fluid .d-flex .btn-outline-success:hover {
           background-color: #edd0b6;
           border-color: #D1CBBC; }
+  /*main*/
   main {
     padding-top: 30;
     align-items: center;
-    background-color: #fffbf5; }
+    background-color: #fffbf5;
+    /*main-index*/
+    /*main-quienessomos*/
+    /*main-productos*/
+    /*main-envios*/
+    /*main-contacto*/ }
+    main .breadcrumb {
+      color: #9B9490;
+      padding: 5%;
+      text-decoration: none; }
     main .card__categorias {
       display: grid;
       grid-template-columns: 1fr;
@@ -425,10 +452,6 @@
         width: 15rem;
         border-radius: 4px;
         border-color: #EFE5D5; }
-    main .breadcrumb {
-      color: #9B9490;
-      padding: 5%;
-      text-decoration: none !important; }
     main .card__quienessomoscontenido {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
@@ -501,6 +524,7 @@
       main .card__formulario .btn-outline-success:hover {
         background-color: #edd0b6;
         border-color: #D1CBBC; }
+  /*footer*/
   footer {
     padding-top: 20%;
     color: #726B68;

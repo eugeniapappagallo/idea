@@ -44,7 +44,7 @@
         text-decoration: none;
     }
 
-
+    /*header*/
     header {
         background-image: url(../img/backroundpic.png);
         margin-bottom: 100;
@@ -54,7 +54,7 @@
         }
 
         #navbar {
-            background-color: #F8F2EA !important;
+            background-color: #F8F2EA;
 
             .card__items {
                 margin: 20px;
@@ -92,9 +92,17 @@
         }
     }
 
+    /*main*/
     main {
 
         background-color: $color-fondo;
+        .breadcrumb {
+            color: #9B9490;
+            padding: 5%;
+            text-decoration: none;
+        }
+
+        /*main-index*/
 
         #carrouselExampleDark {
 
@@ -134,11 +142,7 @@
             }
         }
 
-        .breadcrumb {
-            color: #9B9490;
-            padding: 5%;
-            text-decoration: none !important;
-        }
+        /*main-quienessomos*/
 
         .card__quienessomoscontenido {
             display: grid;
@@ -169,6 +173,8 @@
             }
 
         }
+
+        /*main-productos*/
 
         .card__FotosProductos {
             display: grid;
@@ -207,6 +213,8 @@
             color: #9B9490;
         }
 
+        /*main-envios*/
+
         .card__enviosDescription {
             @include fontsize (18px, normal);
             display: inline-block;
@@ -232,6 +240,8 @@
                 padding: 10px;
             }
         }
+
+        /*main-contacto*/
 
         .card__formulario {
             height: 700px;
@@ -262,6 +272,7 @@
 
     }
 
+    /*footer*/
     footer {
         background-color: $color-fondo;
         color: $color-texto;
@@ -345,6 +356,7 @@
         margin: 15px;
     }
 
+    /*header*/
 
     header {
         height: max-content;
@@ -355,9 +367,11 @@
         }
 
         #navbar {
-            background-color: #F8F2EA !important;
+            background-color: #F8F2EA;
             padding-bottom: 0.5%;
             padding-top: 0%;
+
+
 
             .container-fluid {
                 flex-direction: column;
@@ -407,12 +421,19 @@
 
     }
 
-
+    /*main*/
     main {
 
         background-color: $color-fondo;
 
+        .breadcrumb {
+            color: #9B9490;
+            padding: 5%;
+            text-decoration: none;
 
+        }
+
+        /*main-index*/
         #carrouselExampleDark {
             padding-top: 0%;
 
@@ -452,12 +473,7 @@
             }
         }
 
-        .breadcrumb {
-            color: #9B9490;
-            padding: 5%;
-            text-decoration: none !important;
-
-        }
+        /*main-quienessomos*/
 
         .card__quienessomoscontenido {
             display: grid;
@@ -489,6 +505,8 @@
 
         }
 
+        /*main-productos*/
+
         .card__FotosProductos {
             width: fit-content;
             padding-top: 35%;
@@ -507,6 +525,8 @@
         .page-link {
             color: #9B9490;
         }
+
+        /*main-envios*/
 
         .card__enviosDescription {
             @include fontsize (22px, normal);
@@ -533,6 +553,7 @@
             }
         }
 
+        /*main-contacto*/
         .card__formulario {
             align-items: center;
             padding-bottom: 10%;
@@ -552,7 +573,7 @@
                 }
 
                 input {
-                    height: 40px; 
+                    height: 40px;
                     width: 200px;
                     padding: 0;
                     margin: 0;
@@ -562,10 +583,10 @@
                 textarea {
                     @extend input;
                     height: 75px;
-                    
+
                 }
 
-              
+
 
             }
 
@@ -585,6 +606,7 @@
 
     }
 
+    /*footer*/
     footer {
         padding-top: 30%;
         color: $color-texto;
@@ -672,6 +694,7 @@
     }
 
 
+    /*header*/
     header {
         height: max-content;
         background-image: url(../img/backroundpic.png);
@@ -681,7 +704,7 @@
         }
 
         #navbar {
-            background-color: #F8F2EA !important;
+            background-color: #F8F2EA;
             padding-top: 0px;
             padding-bottom: 0.5%;
 
@@ -744,11 +767,20 @@
 
     }
 
-
+    /*main*/
     main {
         padding-top: 30;
         align-items: center;
         background-color: $color-fondo;
+
+        .breadcrumb {
+            color: #9B9490;
+            padding: 5%;
+            text-decoration: none;
+
+        }
+
+        /*main-index*/
 
         .card__categorias {
             display: grid;
@@ -780,12 +812,7 @@
             }
         }
 
-        .breadcrumb {
-            color: #9B9490;
-            padding: 5%;
-            text-decoration: none !important;
-
-        }
+        /*main-quienessomos*/
 
         .card__quienessomoscontenido {
             display: grid;
@@ -818,6 +845,8 @@
 
         }
 
+        /*main-productos*/
+
         .card__FotosProductos {
             width: fit-content;
             padding-top: 20%;
@@ -838,6 +867,8 @@
         .page-link {
             color: #9B9490;
         }
+
+        /*main-envios*/
 
         .card__enviosDescription {
             @include fontsize (15px, normal);
@@ -860,11 +891,13 @@
             }
 
             td {
-            @extend .th;
+                @extend .th;
                 padding: 5px;
                 font-weight: normal;
             }
         }
+
+        /*main-contacto*/
 
         .card__formulario {
             padding-top: 30%;
@@ -910,6 +943,8 @@
 
     }
 
+    /*footer*/
+
     footer {
         padding-top: 20%;
         color: $color-texto;
@@ -924,8 +959,7 @@
         }
 
         .card__footerPagosFoto {
-            height: 2rem
-            ;
+            height: 2rem;
             width: auto;
 
         }
