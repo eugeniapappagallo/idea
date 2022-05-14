@@ -46,7 +46,7 @@
         color: #D1CBBC;
         border-color: #D1CBBC; }
       header #navbar .d-flex .btn-outline-success:hover {
-        background-color: #edd0b6;
+        background-color: #726B68;
         border-color: #D1CBBC; }
   /*main*/
   main {
@@ -67,8 +67,6 @@
       grid-template-columns: 1fr 1fr 1fr;
       padding: 10%;
       border-width: 5px; }
-      main .card__categorias .cajaCategorias .cajaCategorias:hover {
-        transform: scale(1.05, 1.05); }
       main .card__categorias .cajaCategorias .card__categoriasTitulos {
         font-size: 28px;
         margin: auto;
@@ -103,22 +101,53 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-items: left;
       margin: 0%;
-      padding: 15%;
+      padding: 10%;
       padding-bottom: 5%; }
-      main .card__FotosProductos #fotoGrande {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        align-self: flex-end; }
-      main .card__FotosProductos #fotoGrande2 {
-        grid-column-start: 3;
-        grid-column-end: 5; }
       main .card__FotosProductos .card__fotos {
         margin: 4px;
         height: 300px;
         width: auto;
         border-radius: 3px; }
-      main .card__FotosProductos .card__fotos:hover {
-        transform: scale(1.05, 1.05); }
+      main .card__FotosProductos .cardBotellas {
+        position: relative;
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: flex-end; }
+        main .card__FotosProductos .cardBotellas #fotoGrande {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          align-self: flex-end; }
+      main .card__FotosProductos .cardFotosChicas {
+        position: relative;
+        float: left;
+        align-self: flex-end; }
+      main .card__FotosProductos .info {
+        font-size: 20px;
+        padding-left: 5%;
+        display: none;
+        z-index: 10;
+        position: absolute;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000, endColorstr=#50000000);
+        color: #322F2E;
+        bottom: 0; }
+      main .card__FotosProductos figure:hover .info {
+        display: block; }
+      main .card__FotosProductos figure:hover #fotoGrande {
+        opacity: 60%; }
+      main .card__FotosProductos figure:hover #fotosChicas {
+        opacity: 60%; }
+      main .card__FotosProductos figure:hover #fotoGrande2 {
+        opacity: 60%; }
+      main .card__FotosProductos .cardJarrones {
+        position: relative;
+        float: left;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        align-self: flex-end; }
+        main .card__FotosProductos .cardJarrones #fotoGrande2 {
+          grid-column-start: 3;
+          grid-column-end: 5; }
     main .page-link {
       color: #9B9490; }
     main .card__enviosDescription {
@@ -139,12 +168,12 @@
         font-weight: normal;
         padding: 10px; }
     main .card__formulario {
-      height: 700px;
+      height: 1200px;
       padding-top: 10%; }
       main .card__formulario .card__formularioItem {
         margin: 20px; }
         main .card__formulario .card__formularioItem label {
-          width: 100px;
+          width: 200px;
           display: inline-block;
           font-size: 20px;
           color: #726B68; }
@@ -227,7 +256,7 @@
           color: #D1CBBC;
           border-color: #D1CBBC; }
         header #navbar .container-fluid .d-flex .btn-outline-success:hover {
-          background-color: #edd0b6;
+          background-color: #726B68;
           border-color: #D1CBBC; }
   /*main*/
   main {
@@ -284,14 +313,31 @@
         height: auto;
         align-self: flex-start; }
     main .card__FotosProductos {
-      width: fit-content;
       padding-top: 35%;
       padding-bottom: 5%; }
+      main .card__FotosProductos .cardBotellas {
+        position: relative; }
+      main .card__FotosProductos .cardFotosChicas {
+        position: relative; }
+      main .card__FotosProductos .cardJarrones {
+        position: relative; }
       main .card__FotosProductos .card__fotos {
-        height: 18rem;
-        width: auto; }
-      main .card__FotosProductos .card__fotos:hover {
-        transform: scale(1.05, 1.05); }
+        height: 25rem;
+        width: auto;
+        position: relative; }
+      main .card__FotosProductos .info {
+        font-size: 15px;
+        padding-left: 40%;
+        display: none;
+        z-index: 10;
+        position: absolute;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000, endColorstr=#50000000);
+        color: #322F2E;
+        bottom: 0; }
+      main .card__FotosProductos figure:hover .card__fotos {
+        opacity: 60%; }
+      main .card__FotosProductos figure:hover .info {
+        display: block; }
     main .page-link {
       color: #9B9490; }
     main .card__enviosDescription {
@@ -315,7 +361,7 @@
     main .card__formulario {
       align-items: center;
       padding-bottom: 10%;
-      height: max-content; }
+      height: 1200px; }
       main .card__formulario .card__formularioItem {
         margin: 30px;
         height: 100px; }
@@ -418,7 +464,7 @@
           color: #D1CBBC;
           border-color: #D1CBBC; }
         header #navbar .container-fluid .d-flex .btn-outline-success:hover {
-          background-color: #edd0b6;
+          background-color: #726B68;
           border-color: #D1CBBC; }
   /*main*/
   main {
@@ -473,15 +519,32 @@
         height: auto;
         align-self: flex-start; }
     main .card__FotosProductos {
-      width: fit-content;
       padding-top: 20%;
       border-radius: 3%;
       padding-bottom: 5%; }
+      main .card__FotosProductos .cardBotellas {
+        position: relative; }
+      main .card__FotosProductos .cardFotosChicas {
+        position: relative; }
+      main .card__FotosProductos .cardJarrones {
+        position: relative; }
       main .card__FotosProductos .card__fotos {
-        height: 120px;
-        width: auto; }
-      main .card__FotosProductos .card__fotos:hover {
-        transform: scale(1.05, 1.05); }
+        height: 180px;
+        width: auto;
+        position: relative; }
+      main .card__FotosProductos .info {
+        font-size: 10px;
+        padding-left: 39%;
+        display: none;
+        z-index: 10;
+        position: absolute;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000, endColorstr=#50000000);
+        color: #322F2E;
+        bottom: 0; }
+      main .card__FotosProductos figure:hover .card__fotos {
+        opacity: 60%; }
+      main .card__FotosProductos figure:hover .info {
+        display: block; }
     main .page-link {
       color: #9B9490; }
     main .card__enviosDescription {
